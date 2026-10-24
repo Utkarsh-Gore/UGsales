@@ -1,0 +1,145 @@
+
+.footer {
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 50px 6% 0;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif ;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: #3b82f6;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-box p {
+  color: #9ca3af;
+  line-height: 1.7;
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #60a5fa;
+  padding-left: 5px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  min-height: 65px;
+  border-top: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+  color: #d1d5db;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .footer {
+    padding: 35px 6% 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 18px;
+  }
+
+  .footer-box h2 {
+    font-size: 23px;
+  }
+
+  .footer-box h3 {
+    font-size: 16px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    padding: 15px 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
