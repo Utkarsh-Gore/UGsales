@@ -15,7 +15,7 @@ const port = process.env.PORT;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://kaleidoscopic-chaja-f70ad3.netlify.app",
     credentials: true,
   })
 );
